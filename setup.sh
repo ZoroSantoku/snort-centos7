@@ -74,6 +74,8 @@ sudo cp ~/community-rules/* /etc/snort/rules
 
 wget https://www.snort.org/rules/snortrules-snapshot-29120.tar.gz?oinkcode=838e000a045802f4b3444d4118ba6f26bbb50247 -O ~/registered.tar.gz
 
+sudo tar -xvf ~/registered.tar.gz -C /etc/snort
+
 sudo yum install vim -y
 echo "******************cấu hình snort******************"
 vim /etc/snort/snort.conf
