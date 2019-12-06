@@ -22,11 +22,11 @@ cd daq-2.0.6
 
 cd ~/snort_src
 echo "******************dowload và cài snort.******************"
-wget https://www.snort.org/downloads/snort/snort-2.9.13.tar.gz
+wget https://www.snort.org/downloads/snort/snort-2.9.15.tar.gz
 
-tar -xvzf snort-2.9.13.tar.gz
+tar -xvzf snort-2.9.15.tar.gz
 
-cd snort-2.9.13
+cd snort-2.9.15
 
 ./configure --enable-sourcefire && make && sudo make install
 echo "******************tạo các liên kết******************"
@@ -62,9 +62,9 @@ sudo touch /etc/snort/rules/black_list.rules
 
 sudo touch /etc/snort/rules/local.rules
 echo "******************copy các tệp cấu hình vào thư mục hệ thống******************"
-sudo cp ~/snort_src/snort-2.9.13/etc/*.conf* /etc/snort
+sudo cp ~/snort_src/snort-2.9.15/etc/*.conf* /etc/snort
 
-sudo cp ~/snort_src/snort-2.9.13/etc/*.map /etc/snort
+sudo cp ~/snort_src/snort-2.9.15/etc/*.map /etc/snort
 echo "******************dowload rules******************"
 wget https://www.snort.org/rules/community -O ~/community.tar.gz
 
